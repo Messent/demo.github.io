@@ -1,0 +1,106 @@
+@import (inline) "common/base.css";
+
+.header{
+  height: 44px;
+  width: 100%;
+  background-color: skyblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  .left,.right{
+    width: 52px;
+    height: 100%;
+    font-size: 14px;
+
+    line-height: 44px;
+    .iconfont{
+      font-size: 22px;
+
+    }
+    a{
+      color: #fff;
+    }
+  }
+  .center{
+    border-radius: 44px;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 30px;
+    .iconfont{
+      padding: 0 6px;
+    }
+    .icon-jingdong{
+      color: #E93B3D;
+      font-size: 20px;
+      margin-left: 10px;
+      position: relative;
+      &:after{
+        content :"";
+        width: 1px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -8px;
+        background-color: #ccc;
+
+
+      }
+    }
+    .icon-sousuo{
+      color: #999;
+      font-size: 18px;
+    }
+    input{
+      height: 100%;
+      flex: 1;
+      text-indent: 5px;
+      font-size: 12px;
+    }
+  }
+
+}
+.footer{
+  height: 44px;
+  width: 100%;
+  background-color: pink;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  ul{
+    height: 100%;
+    display: flex;
+    li{
+      flex: 1;
+      &.active{
+        a{
+          color: red;
+        }
+      }
+    }
+  }
+  .iconfont{
+    font-size: 20px;
+  }
+  p{
+    font-size: 12px;
+    transform: scale(0.89);
+  }
+  a{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.container{
+  height: 400px;
+  background-color: purple;
+}
